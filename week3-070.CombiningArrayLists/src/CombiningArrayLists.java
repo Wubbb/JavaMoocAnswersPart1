@@ -23,11 +23,18 @@ public class CombiningArrayLists {
         // list2.add(7);
 
         // Implement the following method and then remove the comment
-        // combine(list1, list2);
+         combine(list1, list2);
         System.out.println(list1);
         System.out.println(list2);
 
 
+    }
+    
+    public static void combine(ArrayList<Integer> first,ArrayList<Integer> second) {
+        ArrayList<Integer> combined = new ArrayList<Integer>();
+//        Collections.addAll(combined,list1,list2);
+//        combined = list1.
+          first.addAll(second);
     }
 
 }
