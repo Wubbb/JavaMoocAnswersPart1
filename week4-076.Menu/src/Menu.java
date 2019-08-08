@@ -9,5 +9,19 @@ public class Menu {
         this.meals = new ArrayList<String>();
     }
 
-    // add the methods here
+    public void addMeal(String meal) {
+        if (!meals.contains(meal)) {
+            meals.add(meal);
+        }
+    }
+
+    public void printMeals() {
+        for (String mealsList : meals) {
+            System.out.println(mealsList);
+        }
+    }
+
+    public void clearMenu() {
+        meals.clear();
+    }
 }
